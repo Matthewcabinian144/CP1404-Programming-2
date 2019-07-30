@@ -20,3 +20,11 @@ print(number1 + number2)
 file_numbers.close()
 
 #Excercise 4:
+file_numbers = open("numbers.txt", 'r')
+total = 0
+for line in file_numbers:
+    numbers = int(line)
+    total += numbers
+file_numbers.close()
+print(total)
+
