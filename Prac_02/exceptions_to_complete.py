@@ -4,12 +4,12 @@ Fill in the TODOs to complete the task
 """
 
 finished = False
-result = 0
+results = 0
 while not finished:
     try:
-        # TODO: this line
-        # TODO: this line
-        pass
-    except:  # TODO - add something after except
+        """Code for input"""
+        results = int(input("Enter a valid Integer: "))
+        finished = True
+    except ValueError:  # TODO - add something after except
         print("Please enter a valid integer.")
-print("Valid result is:", result)
+print("Valid result is:", results)
