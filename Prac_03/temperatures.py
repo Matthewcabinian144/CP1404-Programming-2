@@ -18,3 +18,27 @@ while choice != "Q":
     print(MENU)
     choice = input(">>> ").upper()
 print("Thank you for using Temperature Converter.")
+
+#version 1
+
+"""Version 2 with strings and fucntions"""
+MENU = """C - Convert Celsius to Fahrenheit
+F - Convert Fahrenheit to Celsius
+Q - Quit"""
+
+def main():
+    print(MENU)
+    choice = input(">>> ").upper()
+    if choice == "C":
+        celsius = float(input("Celsius: "))
+
+    elif choice == "F":
+        fahrenheit = float(input("Fahrenheit : "))
+
+    else:
+        print("Invalid option")
+    print(MENU)
+    choice = input(">>> ").upper()
+print("Thank you for using Temperature Converter.")
+
+main()
