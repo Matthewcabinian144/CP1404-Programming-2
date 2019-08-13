@@ -7,3 +7,13 @@ elif score >= 50:
     print("Passable")
 else:
     print("Bad")99
+
+#version 1
+
+"""With Strings and Functions"""
+
+def main():
+    score = float(input("Input Score number: "))
+    print(score_status(score))
+
+
