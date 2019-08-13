@@ -31,14 +31,26 @@ def main():
     choice = input(">>> ").upper()
     if choice == "C":
         celsius = float(input("Celsius: "))
+        fahrenheit = fahrenheit_calculation(celsius)
+        print("Result: {:.2f} F".format(fahrenheit))
 
     elif choice == "F":
         fahrenheit = float(input("Fahrenheit : "))
+        celsius = celsius_calculation(fahrenheit)
+        print("Result: {:.2f} C".format(celsius))
 
     else:
         print("Invalid option")
     print(MENU)
     choice = input(">>> ").upper()
 print("Thank you for using Temperature Converter.")
+
+def celsius_calculation(fahrenheit):
+    celsius = 5 / 9 * (fahrenheit - 32)
+    return celsius
+
+def fahrenheit_calculation(celsius):
+    fahrenheit = celsius * 9.0 / 5 + 32
+    return fahrenheit
 
 main()
