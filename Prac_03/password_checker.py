@@ -5,7 +5,7 @@ def main():
     print_asterisk(password)
 
 
-def get_password()
+def get_password():
     password = input("Enter your password minimum of {} characters: ".format(MINIMUM_LENGTH))
     while len(password) < MINIMUM_LENGTH:
         print("Invalid: Password Too Short")
@@ -13,17 +13,8 @@ def get_password()
     return password
 
 
-
-
-
-
-
-
-
-
-
-
-
+def print_asterisk(sequence):
+    print('*' * len(sequence))
 
 
 main()
